@@ -90,8 +90,8 @@ const authOptions: NextAuthOptions = {
 
     // ------------------ Google OAuth Provider ------------------
     GoogleProvider({
-    clientId: "123456789-abcdefghijklmn.apps.googleusercontent.com",
-    clientSecret: "GOCSPX-abcdefg1234567",
+      clientId: process.env.GOOGLE_CLIENT_ID as string,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
 
